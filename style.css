@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inder", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+h1 {
+  margin-bottom: 50px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player-button {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 3px;
+  text-align: center;
+  transition: all 0.35s;
+  margin-bottom: 25px;
+  position: relative;
+}
+.player-button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: blue;
+  transition: all 0.35s;
+}
+.player-button:hover:after {
+  width: 100%;
+}
+.computer-button {
+  display: block;
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 3px;
+  text-align: center;
+  transition: all 0.35s;
+  margin-bottom: 25px;
+  position: relative;
+}
+.computer-button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: red;
+  transition: all 0.35s;
+}
+.computer-button:hover:after {
+  width: 100%;
+}
